@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "ms-vscode.live-server",
+    "charliermarsh.ruff",
+    "davidanson.vscode-markdownlint"
+  ]
+}

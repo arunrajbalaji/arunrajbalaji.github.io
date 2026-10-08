@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Check the shared header and footer whenever a commit touches a page.
+# Enable once per clone: git config core.hooksPath .githooks
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+if git diff --cached --name-only --diff-filter=ACMR | grep -q '\.html$' \
+  && [ -f scripts/check-chrome.py ]; then
+  python3 scripts/check-chrome.py
+fi

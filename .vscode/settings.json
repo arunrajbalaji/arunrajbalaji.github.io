@@ -1,0 +1,59 @@
+{
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": false,
+  "editor.rulers": [],
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.wordWrap": "on"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.wordWrap": "on"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.wordWrap": "on"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+
+  "html.format.wrapLineLength": 0,
+  "html.format.indentInnerHtml": false,
+  "html.format.extraLiners": "",
+  "html.format.unformatted": "svg,pre,code",
+  "html.validate.styles": true,
+  "html.validate.scripts": true,
+  "css.validate": true,
+  "css.lint.duplicateProperties": "warning",
+  "css.lint.emptyRules": "warning",
+  "css.lint.hexColorLength": "error",
+  "css.lint.unknownProperties": "warning",
+  "css.lint.zeroUnits": "warning",
+
+  "markdownlint.config": {
+    "MD013": false,
+    "MD041": false
+  },
+
+  "livePreview.portNumber": 8000,
+  "livePreview.serverRoot": "/",
+  "livePreview.openPreviewTarget": "External Browser",
+
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    "assets/katex": true,
+    "_local": true
+  }
+}

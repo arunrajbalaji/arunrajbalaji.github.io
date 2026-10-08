@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve site",
+      "type": "shell",
+      "command": "python3 -m http.server 8000",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "silent", "panel": "dedicated" }
+    },
+    {
+      "label": "Check header and footer",
+      "type": "shell",
+      "command": "python3 scripts/check-chrome.py",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "Validate HTML and CSS",
+      "type": "shell",
+      "command": "scripts/validate.sh",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}
