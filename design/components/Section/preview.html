@@ -1,0 +1,29 @@
+<!-- @dsCard group="Page" height=300 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Section</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+  body { margin: 0; background: var(--ground, #F3F4F1); color: var(--ink, #16181A); font-family: var(--font-sans, Barlow, "Helvetica Neue", Helvetica, sans-serif); }
+  .rb-section { max-width: var(--container, 1160px); margin: 0 auto; padding: var(--section-gap, clamp(40px, 5vw, 60px)) var(--gutter, clamp(20px, 3.2vw, 40px)) 0; }
+  .rb-section-row { display: flex; flex-wrap: wrap; gap: 14px var(--space-40, 40px); }
+  .rb-label { flex: 0 0 var(--rail, 180px); margin: 0; padding-top: 5px; font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, Menlo, monospace); font-size: 12.5px; line-height: 1.4; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted, #50565B); }
+  .rb-label-num { color: var(--ink, #16181A); }
+  .rb-section-body { flex: 999 1 480px; min-width: 0; max-width: var(--measure, 700px); display: flex; flex-direction: column; gap: var(--space-16, 16px); }
+  .rb-section-body p { margin: 0; font-size: 18px; line-height: 1.55; text-wrap: pretty; }
+</style>
+</head>
+<body>
+<section class="rb-section">
+  <div class="rb-section-row">
+    <h2 class="rb-label"><span class="rb-label-num">01</span> / Now</h2>
+    <div class="rb-section-body">
+      <p>I'm a Senior Modeler at Ark Biotech in Cambridge, MA, working on bioprocess simulation. I helped design and launch the first version of a real-time bioprocess digital twin: simulations that run alongside live experiments, compare against measured data, and retrain as they go.</p>
+      <p>Before Ark, I completed a Ph.D. in Mechanical Engineering at Stanford in 2024, developing models and solvers for electrochemical systems.</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>

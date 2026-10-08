@@ -1,0 +1,60 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rajbalajiwright.com</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;display=swap">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--ground, #F3F4F1); color: var(--ink, #16181A); font-family: var(--font-sans, Barlow, "Helvetica Neue", Helvetica, sans-serif); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; }
+  .band { position: absolute; top: 0; left: 0; width: 960px; height: 112px; }
+  .band svg { display: block; width: 960px; height: 112px; }
+  .deep { fill: var(--ink, #16181A); }
+  .tint { fill: var(--accent-tint, #DFF1EF); }
+  .brand { fill: var(--accent, #0F7B74); }
+  .blk { rx: var(--radius-none, 0); }
+  .words { position: absolute; left: 40px; right: 40px; bottom: 40px; }
+  .name { margin: 0; font-size: 64px; line-height: .95; font-weight: 400; letter-spacing: -0.01em; color: var(--ink, #16181A); }
+  .tag { margin: 12px 0 0 3px; font-size: 14px; line-height: 20px; color: var(--ink-muted, #50565B); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="band" aria-hidden="true">
+<svg viewBox="0 0 960 112" width="960" height="112">
+<!--
+  blocks      ink 288x112 · accent-tint 224x112 · accent 352x112 (the identity colour, largest) · ink 96x112 — a full-width band, 39% of 960x288
+  arrangement the top-band skeleton: a flush strip of unequal bands, as the site composes in ruled horizontal strips
+  pattern     a square-dot grid, from "precise, technical, mono": space-12 squares at a space-40 pitch, in accent, over the tint
+  scales      block sides in multiples of space-16; dot side space-12; pitch space-40; corners radius-none
+-->
+<rect class="deep blk" x="0" y="0" width="288" height="112"/>
+<rect class="tint blk" x="288" y="0" width="224" height="112"/>
+<rect class="brand blk" x="512" y="0" width="352" height="112"/>
+<rect class="deep blk" x="864" y="0" width="96" height="112"/>
+<rect class="brand blk" x="314" y="10" width="12" height="12"/>
+<rect class="brand blk" x="354" y="10" width="12" height="12"/>
+<rect class="brand blk" x="394" y="10" width="12" height="12"/>
+<rect class="brand blk" x="434" y="10" width="12" height="12"/>
+<rect class="brand blk" x="474" y="10" width="12" height="12"/>
+<rect class="brand blk" x="314" y="50" width="12" height="12"/>
+<rect class="brand blk" x="354" y="50" width="12" height="12"/>
+<rect class="brand blk" x="394" y="50" width="12" height="12"/>
+<rect class="brand blk" x="434" y="50" width="12" height="12"/>
+<rect class="brand blk" x="474" y="50" width="12" height="12"/>
+<rect class="brand blk" x="314" y="90" width="12" height="12"/>
+<rect class="brand blk" x="354" y="90" width="12" height="12"/>
+<rect class="brand blk" x="394" y="90" width="12" height="12"/>
+<rect class="brand blk" x="434" y="90" width="12" height="12"/>
+<rect class="brand blk" x="474" y="90" width="12" height="12"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">rajbalajiwright.com</h1>
+<p class="tag">From equations on paper to production code.</p>
+</div>
+</div>
+</body>
+</html>

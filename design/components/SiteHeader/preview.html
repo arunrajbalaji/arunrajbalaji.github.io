@@ -1,0 +1,39 @@
+<!-- @dsCard group="Chrome" height=72 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SiteHeader</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+  body { margin: 0; background: var(--ground, #F3F4F1); color: var(--ink, #16181A); font-family: var(--font-sans, Barlow, "Helvetica Neue", Helvetica, sans-serif); }
+  .rb-header { border-bottom: var(--border-strong, 2px) solid var(--rule-strong, #16181A); }
+  .rb-header-in { max-width: var(--container, 1160px); margin: 0 auto; padding: 10px var(--gutter, clamp(20px, 3.2vw, 40px)); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2px 32px; }
+  .rb-brand { display: flex; align-items: center; gap: var(--space-12, 12px); min-height: var(--tap, 44px); color: inherit; text-decoration: none; }
+  .rb-mark { display: flex; align-items: center; justify-content: center; width: var(--mark, 34px); height: var(--mark, 34px); background: var(--accent, #0F7B74); color: var(--on-accent, #FFFFFF); font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, Menlo, monospace); font-size: 12.5px; line-height: 1; font-weight: 500; }
+  .rb-name { font-size: 18px; line-height: 1.2; font-weight: 600; }
+  .rb-nav { display: flex; flex-wrap: wrap; gap: 0 var(--nav-gap, clamp(16px, 2.2vw, 28px)); font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, Menlo, monospace); font-size: 13px; line-height: 1.4; text-transform: lowercase; }
+  .rb-nav a { display: inline-flex; align-items: center; min-height: var(--tap, 44px); color: inherit; text-decoration: none; }
+  .rb-nav a:hover { color: var(--link, #0F7B74); }
+  .rb-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+  .rb-brand:focus-visible, .rb-nav a:focus-visible { outline: var(--border-strong, 2px) solid var(--focus, #16181A); outline-offset: var(--border-strong, 2px); }
+</style>
+</head>
+<body>
+<header class="rb-header">
+  <div class="rb-header-in">
+    <a class="rb-brand" href="/">
+      <span class="rb-mark" aria-hidden="true">rbw</span>
+      <span class="rb-name">Raj Balaji-Wright</span>
+    </a>
+    <nav class="rb-nav" aria-label="Main">
+      <a href="/work/" aria-current="page">Work</a>
+      <a href="/publications/">Publications</a>
+      <a href="/teaching/">Teaching</a>
+      <a href="/about/">About</a>
+      <a href="/cv/">CV</a>
+    </nav>
+  </div>
+</header>
+</body>
+</html>
